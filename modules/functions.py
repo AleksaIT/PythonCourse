@@ -12,5 +12,10 @@ def write_todos(todos_arg, filepath="todos.txt"):
     with open('../todos.txt', 'w') as file:
         file.writelines(todos_arg)
 
+def konverter(feets, inches):
+    sumfeet = feets * 0.3048
+    suminch = inches * 0.0254
+    return sumfeet + suminch
+
 if __name__ == "__main__":
     print("Hello from functions")
